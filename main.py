@@ -65,5 +65,4 @@ def download_zip():
     zip_name = request.args.get('zip_name', 'compressed_images.zip')
     return send_from_directory(app.config['UPLOAD_FOLDER'], zip_name, as_attachment=True)
 
-if __name__ == '__main__':
-    app.run(debug=True)
+
